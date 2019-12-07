@@ -184,7 +184,7 @@ public class coloredMazeScript : MonoBehaviour
     {
         var parts = cmd.ToLowerInvariant().Split(new[] { ' ' });
 
-        if (parts.Length == 1 && parts[0].ToLower() == "moduleReset")
+        if (parts.Length == 1 && parts[0].ToLower() == "reset")
         {
             yield return null;
             yield return new KMSelectable[] { buttons[0] };
